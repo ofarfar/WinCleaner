@@ -1,0 +1,30 @@
+{
+  "Language": "zh-CN",
+  "EnableScanOnStartup": false,
+  "ScheduledCleanEnabled": false,
+  "ScheduledCleanIntervalDays": 7,
+  "BackupBeforeClean": true,
+  "MaxBackupAgeDays": 30,
+  "PreviewBeforeClean": true,
+  "LargeFileSizeThresholdMB": 100,
+  "CleanRules": {
+    "CleanTempFiles": true,
+    "CleanRecycleBin": true,
+    "CleanSystemLogs": false,
+    "CleanThumbnailCache": true,
+    "CleanPrefetch": false,
+    "CleanBrowserCache": true,
+    "CleanWindowsUpdateCache": false,
+    "CleanCrashDumps": true,
+    "CleanInstallerPatchCache": false
+  },
+  "FileTypeMappings": {
+    "Images":     [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp", ".svg", ".tiff", ".ico"],
+    "Videos":     [".mp4", ".avi", ".mkv", ".mov", ".wmv", ".flv", ".m4v", ".3gp"],
+    "Documents":  [".doc", ".docx", ".pdf", ".xls", ".xlsx", ".ppt", ".pptx", ".txt", ".odt", ".ods", ".odp", ".rtf"],
+    "Audio":      [".mp3", ".wav", ".flac", ".aac", ".ogg", ".wma", ".m4a"],
+    "Archives":   [".zip", ".rar", ".7z", ".tar", ".gz", ".bz2", ".xz"],
+    "Executables":[".exe", ".msi", ".bat", ".cmd", ".ps1"],
+    "Code":       [".cs", ".py", ".js", ".ts", ".java", ".cpp", ".c", ".h", ".go", ".rs", ".json", ".xml", ".yaml", ".yml", ".html", ".css"]
+  }
+}

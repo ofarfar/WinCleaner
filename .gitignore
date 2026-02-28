@@ -1,0 +1,23 @@
+# Build output
+bin/
+obj/
+*.user
+
+# NuGet
+.nuget/
+packages/
+*.nupkg
+project.lock.json
+
+# VS/Rider
+.vs/
+.idea/
+*.suo
+*.sln.docstates
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs at runtime
+*.log

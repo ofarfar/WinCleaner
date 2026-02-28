@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="WinCleaner.Core/WinCleaner.Core.csproj" />
+  <Project Path="WinCleaner.Tests/WinCleaner.Tests.csproj" />
+  <Project Path="WinCleaner/WinCleaner.csproj" />
+</Solution>
