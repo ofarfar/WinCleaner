@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main", "copilot/**" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore WinCleaner.slnx -p:EnableWindowsTargeting=true
+
+      - name: Build
+        run: dotnet build WinCleaner.slnx --no-restore -p:EnableWindowsTargeting=true
+
+      - name: Test
+        run: dotnet test WinCleaner.Tests/WinCleaner.Tests.csproj --verbosity normal
